@@ -8,3 +8,17 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Jupyter
+.ipynb_checkpoints
+
+# Tests
+.coverage
+
+# IDE
+.idea
+.vscode
+
+# AI
+.claude
+CLAUDE.md
