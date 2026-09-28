@@ -1,0 +1,947 @@
+[
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-09-27 22:17:26",
+    "operation":"deposit",
+    "amount":921.0,
+    "balance_after":2121.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-09-27 22:17:26",
+    "operation":"deposit",
+    "amount":607.0,
+    "balance_after":2728.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-09-28 22:17:26",
+    "operation":"deposit",
+    "amount":488.0,
+    "balance_after":3216.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"28\/09\/2025 22:17",
+    "operation":"deposit",
+    "amount":129.0,
+    "balance_after":3345.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-09-29 22:17:26",
+    "operation":"deposit",
+    "amount":880.0,
+    "balance_after":4225.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-09-29 22:17:26",
+    "operation":"withdraw",
+    "amount":null,
+    "balance_after":4039.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-01 22:17:26",
+    "operation":"withdraw",
+    "amount":352.0,
+    "balance_after":3687.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-01 22:17:26",
+    "operation":"withdraw",
+    "amount":65.0,
+    "balance_after":3622.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-01 22:17:26",
+    "operation":null,
+    "amount":654.0,
+    "balance_after":4276.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-01 22:17:26",
+    "operation":"withdraw",
+    "amount":245.0,
+    "balance_after":4031.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-03 22:17:26",
+    "operation":"interest",
+    "amount":532.0,
+    "balance_after":4563.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-05 22:17:26",
+    "operation":"deposit",
+    "amount":327.0,
+    "balance_after":4890.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-06 22:17:26",
+    "operation":"withdraw",
+    "amount":333.0,
+    "balance_after":4557.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-17-34 12:00:00",
+    "operation":"deposit",
+    "amount":793.0,
+    "balance_after":5350.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"06\/10\/2025 22:17",
+    "operation":"withdraw",
+    "amount":198.0,
+    "balance_after":5152.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-06 22:17:26",
+    "operation":"diposit",
+    "amount":669.0,
+    "balance_after":5821.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-08 22:17:26",
+    "operation":"interest",
+    "amount":744.0,
+    "balance_after":6565.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2023-16-40 12:00:00",
+    "operation":"withdraw",
+    "amount":111.0,
+    "balance_after":6454.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-12 22:17:26",
+    "operation":"deposit",
+    "amount":838.0,
+    "balance_after":7292.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-14 22:17:26",
+    "operation":"deposit",
+    "amount":532.0,
+    "balance_after":7824.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-16 22:17:26",
+    "operation":"withdraw",
+    "amount":393.0,
+    "balance_after":7431.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-16 22:17:26",
+    "operation":"deposit",
+    "amount":701.0,
+    "balance_after":8132.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-17 22:17:26",
+    "operation":"withdraw",
+    "amount":308.0,
+    "balance_after":7824.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-18 22:17:26",
+    "operation":"deposit",
+    "amount":135.0,
+    "balance_after":7959.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-19 22:17:26",
+    "operation":"deposit",
+    "amount":916.0,
+    "balance_after":8875.0,
+    "status":"succes"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-09-27 22:17:26",
+    "operation":"deposit",
+    "amount":469.0,
+    "balance_after":1969.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-09-27 22:17:26",
+    "operation":"withdraw",
+    "amount":392.0,
+    "balance_after":1577.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-09-28 22:17:26",
+    "operation":"deposit",
+    "amount":317.0,
+    "balance_after":1894.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2023-22-32 12:00:00",
+    "operation":"deposit",
+    "amount":797.0,
+    "balance_after":2691.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-09-30 22:17:26",
+    "operation":"interest",
+    "amount":null,
+    "balance_after":2825.55,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-02 22:17:26",
+    "operation":"deposit",
+    "amount":840.0,
+    "balance_after":3665.55,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"04\/10\/2025 22:17",
+    "operation":"interest",
+    "amount":183.28,
+    "balance_after":3848.83,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-06 22:17:26",
+    "operation":"interest",
+    "amount":192.44,
+    "balance_after":4041.27,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-08 22:17:26",
+    "operation":"deposit",
+    "amount":-136.0,
+    "balance_after":4177.27,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-08 22:17:26",
+    "operation":"deposit",
+    "amount":426.0,
+    "balance_after":4603.27,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"09\/10\/2025 22:17",
+    "operation":"deposit",
+    "amount":638.0,
+    "balance_after":5241.27,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-09 22:17:26",
+    "operation":"withdraw",
+    "amount":170.0,
+    "balance_after":5071.27,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-09 22:17:26",
+    "operation":"diposit",
+    "amount":432.0,
+    "balance_after":5503.27,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-09 22:17:26",
+    "operation":"deposit",
+    "amount":622.0,
+    "balance_after":6125.27,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-10 22:17:26",
+    "operation":"interest",
+    "amount":306.26,
+    "balance_after":6431.53,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-12 22:17:26",
+    "operation":"withdraw",
+    "amount":278.0,
+    "balance_after":6153.53,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-13 22:17:26",
+    "operation":"withdraw",
+    "amount":440.0,
+    "balance_after":5713.53,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-14 22:17:26",
+    "operation":"withdraw",
+    "amount":231.0,
+    "balance_after":5482.53,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-15 22:17:26",
+    "operation":"interest",
+    "amount":274.13,
+    "balance_after":5756.66,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-16 22:17:26",
+    "operation":"deposit",
+    "amount":-872.0,
+    "balance_after":6628.66,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-17 22:17:26",
+    "operation":"withdraw",
+    "amount":286.0,
+    "balance_after":6342.66,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-19 22:17:26",
+    "operation":"withdraw",
+    "amount":300.0,
+    "balance_after":6042.66,
+    "status":"succes"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-20 22:17:26",
+    "operation":"interest",
+    "amount":302.13,
+    "balance_after":6344.79,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-22 22:17:26",
+    "operation":"wdraw",
+    "amount":457.0,
+    "balance_after":5887.79,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-23 22:17:26",
+    "operation":"withdraw",
+    "amount":282.0,
+    "balance_after":5605.79,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-02 22:17:26",
+    "operation":"deposit",
+    "amount":233.0,
+    "balance_after":1033.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-03 22:17:26",
+    "operation":"interest",
+    "amount":292.0,
+    "balance_after":741.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-05 22:17:26",
+    "operation":"deposit",
+    "amount":720.0,
+    "balance_after":1461.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-05 22:17:26",
+    "operation":"interest",
+    "amount":290.0,
+    "balance_after":1171.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-06 22:17:26",
+    "operation":"deposit",
+    "amount":296.0,
+    "balance_after":1467.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-08 22:17:26",
+    "operation":"deposit",
+    "amount":956.0,
+    "balance_after":2423.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-10 22:17:26",
+    "operation":"deposit",
+    "amount":754.0,
+    "balance_after":3177.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-10 22:17:26",
+    "operation":"deposit",
+    "amount":255.0,
+    "balance_after":3432.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-12 22:17:26",
+    "operation":"deposit",
+    "amount":-115.0,
+    "balance_after":3547.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-14 22:17:26",
+    "operation":"withdraw",
+    "amount":131.0,
+    "balance_after":3416.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-16 22:17:26",
+    "operation":"deposit",
+    "amount":898.0,
+    "balance_after":4314.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-16 22:17:26",
+    "operation":"withdraw",
+    "amount":187.0,
+    "balance_after":4127.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-17 22:17:26",
+    "operation":"deposit",
+    "amount":999.0,
+    "balance_after":5126.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-18 22:17:26",
+    "operation":"withdraw",
+    "amount":268.0,
+    "balance_after":4858.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-19 22:17:26",
+    "operation":"interest",
+    "amount":345.0,
+    "balance_after":4513.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-20 22:17:26",
+    "operation":"withdraw",
+    "amount":118.0,
+    "balance_after":4395.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-21 22:17:26",
+    "operation":"deposit",
+    "amount":239.0,
+    "balance_after":4634.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-22 22:17:26",
+    "operation":"interest",
+    "amount":788.0,
+    "balance_after":5422.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-23 22:17:26",
+    "operation":"wdraw",
+    "amount":487.0,
+    "balance_after":4935.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2023-14-33 12:00:00",
+    "operation":"deposit",
+    "amount":953.0,
+    "balance_after":5888.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-22 22:17:26",
+    "operation":"diposit",
+    "amount":838.0,
+    "balance_after":2838.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-23 22:17:26",
+    "operation":"deposit",
+    "amount":192.0,
+    "balance_after":3030.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-23 22:17:26",
+    "operation":"deposit",
+    "amount":662.0,
+    "balance_after":3692.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-24 22:17:26",
+    "operation":"withdraw",
+    "amount":441.0,
+    "balance_after":3251.0,
+    "status":"succes"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-24 22:17:26",
+    "operation":"deposit",
+    "amount":649.0,
+    "balance_after":3900.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-25 22:17:26",
+    "operation":"deposit",
+    "amount":276.0,
+    "balance_after":4176.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-25 22:17:26",
+    "operation":"deposit",
+    "amount":126.0,
+    "balance_after":4302.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-27 22:17:26",
+    "operation":"withdraw",
+    "amount":-459.0,
+    "balance_after":3843.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-28 22:17:26",
+    "operation":"deposit",
+    "amount":417.0,
+    "balance_after":4260.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-29 22:17:26",
+    "operation":"withdraw",
+    "amount":424.0,
+    "balance_after":3836.0,
+    "status":"succes"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-09-30 22:17:26",
+    "operation":"deposit",
+    "amount":720.0,
+    "balance_after":4556.0,
+    "status":"succes"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"01\/10\/2025 22:17",
+    "operation":"withdraw",
+    "amount":309.0,
+    "balance_after":4247.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-01 22:17:26",
+    "operation":"deposit",
+    "amount":584.0,
+    "balance_after":4831.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-02 22:17:26",
+    "operation":"deposit",
+    "amount":937.0,
+    "balance_after":5768.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-04 22:17:26",
+    "operation":"withdraw",
+    "amount":null,
+    "balance_after":5715.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-05 22:17:26",
+    "operation":"withdraw",
+    "amount":209.0,
+    "balance_after":5506.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2024-17-35 12:00:00",
+    "operation":"deposit",
+    "amount":533.0,
+    "balance_after":6039.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-09 22:17:26",
+    "operation":"deposit",
+    "amount":562.0,
+    "balance_after":6601.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-09 22:17:26",
+    "operation":"deposit",
+    "amount":365.0,
+    "balance_after":6966.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-09 22:17:26",
+    "operation":"deposit",
+    "amount":573.0,
+    "balance_after":7539.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-11 22:17:26",
+    "operation":"interest",
+    "amount":376.95,
+    "balance_after":7915.95,
+    "status":"succes"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-13 22:17:26",
+    "operation":"withdraw",
+    "amount":291.0,
+    "balance_after":7624.95,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-15 22:17:26",
+    "operation":"deposit",
+    "amount":789.0,
+    "balance_after":8413.95,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-15 22:17:26",
+    "operation":"deposit",
+    "amount":-307.0,
+    "balance_after":8720.95,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-16-35 12:00:00",
+    "operation":"withdraw",
+    "amount":191.0,
+    "balance_after":8529.95,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-17 22:17:26",
+    "operation":"deposit",
+    "amount":864.0,
+    "balance_after":9393.95,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-19 22:17:26",
+    "operation":"deposit",
+    "amount":671.0,
+    "balance_after":10064.95,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-19 22:17:26",
+    "operation":"interest",
+    "amount":503.25,
+    "balance_after":10568.2,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-19 22:17:26",
+    "operation":null,
+    "amount":412.0,
+    "balance_after":10156.2,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"2025-10-19 22:17:26",
+    "operation":"deposit",
+    "amount":696.0,
+    "balance_after":10852.2,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"09\/10\/2025 22:17",
+    "operation":"deposit",
+    "amount":638.0,
+    "balance_after":5241.27,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100003",
+    "account_type":"checking",
+    "date":"2025-10-12 22:17:26",
+    "operation":"deposit",
+    "amount":-115.0,
+    "balance_after":3547.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100004",
+    "account_type":"savings",
+    "date":"01\/10\/2025 22:17",
+    "operation":"withdraw",
+    "amount":309.0,
+    "balance_after":4247.0,
+    "status":"success"
+  },
+  {
+    "account_number":"ACC-100002",
+    "account_type":"savings",
+    "date":"2025-10-19 22:17:26",
+    "operation":"withdraw",
+    "amount":300.0,
+    "balance_after":6042.66,
+    "status":"succes"
+  },
+  {
+    "account_number":"ACC-100001",
+    "account_type":"checking",
+    "date":"2025-10-16 22:17:26",
+    "operation":"withdraw",
+    "amount":393.0,
+    "balance_after":7431.0,
+    "status":"success"
+  }
+]
