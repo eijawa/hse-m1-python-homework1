@@ -131,7 +131,7 @@ def test_deserialize_aliases():
         balance_after=200.0,
         created_at=datetime(2025, 9, 27, 22, 17, 26),
     )
-    assert op.balance_before == 0.0
+    assert op.balance_before is None
 
 
 def test_deserialize_field_names():

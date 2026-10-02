@@ -9,7 +9,7 @@ HISTORY_ATTR = "_operations_history"
 
 
 class DummyAccount(Account):
-    pass
+    account_type = "dummy"
 
 
 # --- Создание и свойства ---
@@ -28,15 +28,20 @@ def test_savings_properties(savings):
     assert savings.holder == "Иван Петров"
     assert savings.account_type == "savings"
     assert savings.allowed_operations == {"deposit", "withdraw", "interest"}
-    assert savings._max_allowed_rate == 7.0
+    assert savings.max_allowed_rate == 7.0
 
 
 def test_savings_custom_max_rate(manager):
     account = SavingsAccount(
-        10.0, account_holder="Ivan Petrov", account_number_manager=manager
+        "Ivan Petrov", account_number_manager=manager, max_allowed_rate=10.0
     )
 
-    assert account._max_allowed_rate == 10.0
+    assert account.max_allowed_rate == 10.0
+
+
+def test_savings_max_rate_is_keyword_only(manager):
+    with pytest.raises(TypeError):
+        SavingsAccount(10.0, "Ivan Petrov", account_number_manager=manager)
 
 
 def test_default_balance_is_float_zero(manager):
@@ -81,31 +86,32 @@ def test_allowed_operations_cannot_be_extended(manager, cls):
     assert "hack" not in account.allowed_operations
 
 
-@pytest.mark.parametrize("cls", [CheckingAccount, SavingsAccount])
-def test_account_type_cannot_be_overridden(manager, cls):
-    account = cls(
-        account_holder="Ivan Petrov",
-        account_number_manager=manager,
-        account_type="other",
-    )
+@pytest.mark.parametrize(
+    ("cls", "expected"), [(CheckingAccount, "checking"), (SavingsAccount, "savings")]
+)
+def test_account_type_is_class_attribute(cls, expected):
+    assert cls.account_type == expected
 
-    assert account.account_type != "other"
+
+@pytest.mark.parametrize("cls", [CheckingAccount, SavingsAccount])
+def test_account_type_cannot_be_passed(manager, cls):
+    with pytest.raises(TypeError, match="account_type"):
+        cls(
+            account_holder="Ivan Petrov",
+            account_number_manager=manager,
+            account_type="other",
+        )
 
 
 def test_base_account_with_extra_operations(manager):
     account = DummyAccount(
         "Ivan Petrov",
-        account_type="dummy",
         account_number_manager=manager,
         allowed_operations={"transfer"},
     )
 
+    assert account.account_type == "dummy"
     assert account.allowed_operations == {"deposit", "withdraw", "transfer"}
-
-
-def test_base_account_requires_account_type(manager):
-    with pytest.raises(AssertionError, match="Тип аккаунта"):
-        DummyAccount("Ivan Petrov", account_type="", account_number_manager=manager)
 
 
 # --- Валидация владельца ---
@@ -130,7 +136,6 @@ def test_valid_holder(manager, holder):
         "IVAN PETROV",
         "Ivan-Petrov",
         "Ёжик Петров",
-        "",
     ],
 )
 def test_invalid_holder_format(manager, holder):
@@ -138,7 +143,7 @@ def test_invalid_holder_format(manager, holder):
         CheckingAccount(holder, account_number_manager=manager)
 
 
-@pytest.mark.parametrize("holder", [None, 123, ["Ivan Petrov"]])
+@pytest.mark.parametrize("holder", [None, 123, ["Ivan Petrov"], ""])
 def test_holder_must_be_string(manager, holder):
     with pytest.raises(ValueError, match="строкой"):
         CheckingAccount(holder, account_number_manager=manager)
@@ -303,7 +308,7 @@ def test_savings_withdraw_body(savings):
     SavingsAccount.withdraw.__wrapped__(savings, 50.0)
 
     assert savings.get_balance() == 50.0
-    # Родительский mark_operation заглушён, история не пишется
+    # Тело без декоратора историю не пишет
     assert savings.get_history() == []
 
 
@@ -336,12 +341,106 @@ def test_apply_interest_body(savings, rate, expected):
 
 def test_apply_interest_body_custom_max_rate(manager):
     account = SavingsAccount(
-        10.0, account_holder="Ivan Petrov", account_number_manager=manager, balance=100.0
+        "Ivan Petrov",
+        account_number_manager=manager,
+        balance=100.0,
+        max_allowed_rate=10.0,
     )
 
     SavingsAccount.apply_interest.__wrapped__(account, 10.0)
 
     assert account.get_balance() == pytest.approx(110.0)
+
+
+@pytest.mark.parametrize("rate", [None, "5.0"])
+def test_apply_interest_body_rejects_non_float(savings, rate):
+    with pytest.raises(ValueError, match="валидным числом"):
+        SavingsAccount.apply_interest.__wrapped__(savings, rate)
+
+
+# --- Валидация сумм ---
+
+
+@pytest.mark.parametrize("value", [None, "10.0", [10.0]])
+def test_validate_float_rejects_non_float(checking, value):
+    with pytest.raises(ValueError, match="валидным числом"):
+        checking._validate_float(value)
+
+
+@pytest.mark.parametrize("method", ["deposit", "withdraw"])
+def test_int_amount_rejected(checking, method):
+    assert getattr(checking, method)(10) is None
+
+    op = _single_operation(checking)
+    assert (op.name, op.status, op.value) == (method, "fail", 10)
+    assert checking.get_balance() == 100.0
+
+
+def test_validate_float_returns_value(checking):
+    assert checking._validate_float(1.5) == 1.5
+
+
+@pytest.mark.parametrize("method", ["deposit", "withdraw"])
+def test_non_float_amount_swallowed_and_recorded(checking, method):
+    assert getattr(checking, method)("10.0") is None
+
+    op = _single_operation(checking)
+    assert (op.name, op.status, op.value) == (method, "fail", "10.0")
+    assert checking.get_balance() == 100.0
+
+
+def test_savings_validate_withdraw_half_boundary(savings):
+    assert savings._validate_withdraw(50.0) == 50.0
+
+    with pytest.raises(ValueError, match="50%"):
+        savings._validate_withdraw(50.01)
+
+
+@pytest.mark.parametrize("rate", [0.1, 7.0])
+def test_validate_interest_returns_rate(savings, rate):
+    assert savings._validate_interest(rate) == rate
+
+
+# --- Переопределение баланса ---
+
+
+def test_override_balance_disabled_by_default(checking):
+    checking.override_balance(500.0)
+
+    assert checking.get_balance() == 100.0
+
+
+def test_override_balance_enabled(manager):
+    account = CheckingAccount(
+        "Ivan Petrov", account_number_manager=manager, enable_balance_override=True
+    )
+
+    account.override_balance(500.0)
+
+    assert account.get_balance() == 500.0
+    assert account.get_history() == []
+
+
+def test_override_balance_validates_value(manager):
+    account = CheckingAccount(
+        "Ivan Petrov", account_number_manager=manager, enable_balance_override=True
+    )
+
+    with pytest.raises(ValueError, match="валидным числом"):
+        account.override_balance(None)
+
+    assert account.get_balance() == 0.0
+
+
+def test_override_balance_can_be_disabled(manager):
+    account = CheckingAccount(
+        "Ivan Petrov", account_number_manager=manager, enable_balance_override=True
+    )
+
+    account.disable_balance_override()
+    account.override_balance(500.0)
+
+    assert account.get_balance() == 0.0
 
 
 # --- Поиск по истории ---
@@ -400,3 +499,15 @@ def test_get_history_returns_same_list(checking, make_operation):
     _set_history(checking, [op])
 
     assert checking.get_history() == [op]
+
+
+def test_add_operation_to_history(checking, make_operation):
+    first = make_operation()
+    second = make_operation(name="withdraw")
+
+    checking.add_operation_to_history(first)
+    checking.add_operation_to_history(second)
+
+    assert checking.get_history() == [first, second]
+    # Баланс при ручном добавлении не меняется
+    assert checking.get_balance() == 100.0

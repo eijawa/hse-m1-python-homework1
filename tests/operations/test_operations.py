@@ -48,7 +48,7 @@ def test_utcnowfn_returns_aware_utc():
 def test_operation_defaults():
     op = Operation(name="deposit", status="success", value=10.0)
 
-    assert op.balance_before == 0.0
+    assert op.balance_before is None
     assert op.balance_after is None
     assert op.created_at.tzinfo is UTC
 
