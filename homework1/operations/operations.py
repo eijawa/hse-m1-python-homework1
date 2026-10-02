@@ -26,7 +26,9 @@ class Operation:
     value: float = field(metadata={"serialization_alias": "amount"})
 
     # Баланс аккаунта до выполнения операции
-    balance_before: float = field(default=0.0, metadata={"serialize_field": False})
+    balance_before: float | None = field(
+        default=None, metadata={"serialize_field": False}
+    )
 
     # Баланс аккаунта после выполнения операции.
     # None - поскольку операция может завершиться с ошибкой

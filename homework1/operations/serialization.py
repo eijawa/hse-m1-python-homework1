@@ -10,7 +10,7 @@ from pathlib import Path
 from pprint import pformat
 from typing import Any, NamedTuple
 
-from .operations import Operation
+from homework1.operations.operations import Operation
 
 
 class OperationCodec(ABC):
