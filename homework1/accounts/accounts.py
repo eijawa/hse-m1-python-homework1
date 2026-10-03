@@ -4,7 +4,7 @@ from abc import ABC
 from homework1.core.exc import NegativeDepositError
 from homework1.operations.operations import Operation, mark_operation
 
-from .account_number_manager import AccountNumbersManager
+from homework1.accounts.account_number_manager import AccountNumbersManager
 
 
 class Account(ABC):
